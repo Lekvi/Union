@@ -1,0 +1,52 @@
+.slider
+    position: relative
+    padding-top: 30px
+    &_main
+        position: relative
+        img
+            width: 100%
+            // max-width: 1440px
+            max-height: 430px
+            position: relative
+            mix-blend-mode: normal
+        img:before
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(25, 52, 65, 0.0001) 0%, rgba(25, 52, 65, 0.5) 100%);
+    &_item
+        background-image: url ('./image/main_slider-item.png')
+        background-size: cover
+    &_navigation
+        position: absolute
+        bottom: 50px
+        left: 145px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &_dots
+            ul
+                display: flex
+                list-style-type: none
+                li                
+                    padding: 0px 16px
+                    button[type='button']
+                        @extend .button
+                        color:#FFFFFF
+                        opacity: 0.5
+                        font-size: 14px
+                li.slick-active
+                    button
+                        opacity: 1        
+                li:nth-child(2n)
+                    padding: 0
+                li:first-child
+                    padding-left: 24px
+                li:last-child
+                    padding-right: 24px
+
+
