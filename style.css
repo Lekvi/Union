@@ -217,6 +217,10 @@
   height: 100%;
 }
 
+.page_background .container, .page_background .slider_item-container, .page_background .news_container, .page_background .contest_container, .page_background .partners_container, .page_background .subscribe_container {
+  max-width: 1260px;
+}
+
 .page_background .container .lines, .page_background .slider_item-container .lines, .page_background .news_container .lines, .page_background .contest_container .lines, .page_background .partners_container .lines, .page_background .subscribe_container .lines {
   display: -webkit-box;
   display: -ms-flexbox;

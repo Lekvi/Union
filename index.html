@@ -19,22 +19,26 @@
     <!-- Подключаем стили мобильного меню -->
     <link rel="stylesheet" href="./mobile_menu.css">
 
-  
-
     <!-- Подключаем стили Slick -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./library/slick-1.8.1/slick/slick.css">
     
     <!-- Подключаем Material Icons для иконок -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-   
-
-
-   
-
 </head>
 
 <body>
+    <div class="page_background">
+        <div class="container">
+            <div class="lines">
+                <div class="lines_row"></div>
+                <div class="lines_row"></div>
+                <div class="lines_row"></div>
+                <div class="lines_row"></div>
+            </div>
+        </div>
+    </div>
+        
     <header class="header">
         <div class="header_topbar">
             <div class="container">
@@ -239,7 +243,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    
+
                     <div class="menu__links">
                         <a class="menu__links-item" href="/">Новости</a>
                         <a class="menu__links-item" href="/">Проекты</a>
@@ -276,17 +280,7 @@
 
     </header>
 
-    <!-- <div class="page_background">
-        <div class="container">
-            <div class="lines">
-                <div class="lines_row"></div>
-                <div class="lines_row"></div>
-                <div class="lines_row"></div>
-                <div class="lines_row"></div>
-            </div>
-        </div>
-    </div> -->
-
+    
     <section class="slider">
 
         <div class="slider_main">
@@ -316,120 +310,124 @@
         </div>
         <div class="slider_navigation">
             <button class="arrow_left arrow button">
-                <!-- <img src="./images/arrow-left.png" alt=""> -->
             </button>
             <div class="slider_navigation_dots"></div>
             <button class="arrow_right arrow button">
-                <!-- <img src="./images/arrow-right.png" alt=""> -->
             </button>
         </div>
     </section>
 
     <section class="news">
         <div class="news_container">
-           
+
             <div class="news_slider-navigation container">
                 <h2 class="news_title size-2">Новости</h2>
                 <a href="#" class="news_all size-4">Все</a>
                 <div class="navigation_arrow">
-                    <button class="arrow_left news_arrow_left arrow button">    
+                    <button class="arrow_left news_arrow_left arrow button">
                     </button>
                     <button class="arrow_right news_arrow_right arrow button">
                     </button>
                 </div>
             </div>
-                
-            <div class="news_slider">    
+
+            <div class="news_slider">
                 <div class="news_slider-item">
-                   
-                        <div class="news_item-img">
-                            <a href="" class="news_item_link">
-                                <img src="./images/news-image.png" alt="" class="item_image">
-                            </a>
-                            <span class="item_date category size-5">3 июля</span>
-                        </div>
-                        <div class="news_item-description">
-                            <h2 class="description_title size-3">Идет набор в летнюю архитектурно-художественную школу Михаила Филиппова</h2>
-                            <h3 class="description_category size-5">Архитектура, Арт</h3>
-                        </div>
-                    
+
+                    <div class="news_item-img">
+                        <a href="" class="news_item_link">
+                            <img src="./images/news-image.png" alt="" class="item_image">
+                        </a>
+                        <span class="item_date category size-5">3 июля</span>
+                    </div>
+                    <div class="news_item-description">
+                        <h2 class="description_title size-3">Идет набор в летнюю архитектурно-художественную школу
+                            Михаила Филиппова</h2>
+                        <h3 class="description_category size-5">Архитектура, Арт</h3>
+                    </div>
+
                 </div>
 
                 <div class="news_slider-item">
-                   
-                        <div class="news_item-img">
-                            <a href="" class="news_item_link">
-                                <img src="./images/news-image-2.png" alt="" class="item_image">
-                            </a>
-                            <span class="item_date category size-5">29 июня</span>
-                        </div>
-                        <div class="news_item-description">
-                            <h2 class="description_title size-3">20 студентов построили летний павильон на Даниловском рынке</h2>
-                            <h3 class="description_category size-5">Архитектура</h3>
-                        </div>
-                    
+
+                    <div class="news_item-img">
+                        <a href="" class="news_item_link">
+                            <img src="./images/news-image-2.png" alt="" class="item_image">
+                        </a>
+                        <span class="item_date category size-5">29 июня</span>
+                    </div>
+                    <div class="news_item-description">
+                        <h2 class="description_title size-3">20 студентов построили летний павильон на Даниловском рынке
+                        </h2>
+                        <h3 class="description_category size-5">Архитектура</h3>
+                    </div>
+
                 </div>
                 <div class="news_slider-item">
-                   
-                        <div class="news_item-img">
-                            <a href="" class="news_item_link">
-                                <img src="./images/news-image-3.png" alt="" class="item_image">
-                            </a>
-                            <span class="item_date category size-5">27 Июня</span>
-                        </div>
-                        <div class="news_item-description">
-                            <h2 class="description_title size-3">Megabudka выиграли конкурс на фасады ЖК в Мякининской пойме</h2>
-                            <h3 class="description_category size-5">Архитектура</h3>
-                        </div>
-                    
+
+                    <div class="news_item-img">
+                        <a href="" class="news_item_link">
+                            <img src="./images/news-image-3.png" alt="" class="item_image">
+                        </a>
+                        <span class="item_date category size-5">27 Июня</span>
+                    </div>
+                    <div class="news_item-description">
+                        <h2 class="description_title size-3">Megabudka выиграли конкурс на фасады ЖК в Мякининской пойме
+                        </h2>
+                        <h3 class="description_category size-5">Архитектура</h3>
+                    </div>
+
                 </div>
                 <div class="news_slider-item">
-                   
-                        <div class="news_item-img">
-                            <a href="" class="news_item_link">
-                                <img src="./images/news-image-4.png" alt="" class="item_image">
-                            </a>
-                            <span class="item_date category size-5">26 июня</span>
-                        </div>
-                        <div class="news_item-description">
-                            <h2 class="description_title size-3">Определены 80 победителей конкурса проектов городской среды в малых городах и исторических…</h2>
-                            <h3 class="description_category size-5">Урбанистика</h3>
-                        </div>
-                    
+
+                    <div class="news_item-img">
+                        <a href="" class="news_item_link">
+                            <img src="./images/news-image-4.png" alt="" class="item_image">
+                        </a>
+                        <span class="item_date category size-5">26 июня</span>
+                    </div>
+                    <div class="news_item-description">
+                        <h2 class="description_title size-3">Определены 80 победителей конкурса проектов городской среды
+                            в малых городах и исторических…</h2>
+                        <h3 class="description_category size-5">Урбанистика</h3>
+                    </div>
+
                 </div>
                 <div class="news_slider-item">
-                   
-                        <div class="news_item-img">
-                            <a href="" class="news_item_link">
-                                <img src="./images/news-image-5.png" alt="" class="item_image">
-                            </a>
-                            <span class="item_date category size-5">3 июля</span>
-                        </div>
-                        <div class="news_item-description">
-                            <h2 class="description_title size-3">Идет набор в летнюю архитектурно-художественную школу Михаила Филиппова</h2>
-                            <h3 class="description_category size-5">Архитектура, Арт</h3>
-                        </div>
-                    
+
+                    <div class="news_item-img">
+                        <a href="" class="news_item_link">
+                            <img src="./images/news-image-5.png" alt="" class="item_image">
+                        </a>
+                        <span class="item_date category size-5">3 июля</span>
+                    </div>
+                    <div class="news_item-description">
+                        <h2 class="description_title size-3">Идет набор в летнюю архитектурно-художественную школу
+                            Михаила Филиппова</h2>
+                        <h3 class="description_category size-5">Архитектура, Арт</h3>
+                    </div>
+
                 </div>
                 <div class="news_slider-item">
-                   
-                        <div class="news_item-img">
-                            <a href="" class="news_item_link">
-                                <img src="./images/news-image-1.png" alt="" class="item_image">
-                            </a>
-                            <span class="item_date category size-5">3 июля</span>
-                        </div>
-                        <div class="news_item-description">
-                            <h2 class="description_title size-3">Идет набор в летнюю архитектурно-художественную школу Михаила Филиппова</h2>
-                            <h3 class="description_category size-5">Архитектура, Арт</h3>
-                        </div>
-                    
+
+                    <div class="news_item-img">
+                        <a href="" class="news_item_link">
+                            <img src="./images/news-image-1.png" alt="" class="item_image">
+                        </a>
+                        <span class="item_date category size-5">3 июля</span>
+                    </div>
+                    <div class="news_item-description">
+                        <h2 class="description_title size-3">Идет набор в летнюю архитектурно-художественную школу
+                            Михаила Филиппова</h2>
+                        <h3 class="description_category size-5">Архитектура, Арт</h3>
+                    </div>
+
                 </div>
 
 
             </div>
         </div>
-        
+
     </section>
 
     <section class="grey_bg">
@@ -442,11 +440,11 @@
         <div class="contest_container">
             <div class="container">
                 <h2 class="contest_title size-2">Конкурсы</h2>
-                <a href="#" class="contest_all size-4">Все</a> 
+                <a href="#" class="contest_all size-4">Все</a>
             </div>
-            
+
             <div class="contest_slider">
-                
+
                 <div class="contest_item">
                     <div class="contest_item-img">
                         <a href="#" class="contest_item_link">
@@ -457,9 +455,9 @@
                     <div class="contest_item-description">
                         <h2 class="description_title size-3">Керамогранит в архитектуре 2018</h2>
                         <h3 class="description_category size-4">VII Всероссийский архитектурный конкурс
-                                Окончание регистрации: 1 октября 
-                                Прием работ: 1 октября 
-                                Россия
+                            Окончание регистрации: 1 октября
+                            Прием работ: 1 октября
+                            Россия
                         </h3>
                     </div>
                 </div>
@@ -474,9 +472,9 @@
                     <div class="contest_item-description">
                         <h2 class="description_title size-3">Interior Concept 2018</h2>
                         <h3 class="description_category size-4">II Всероссийский конкурс для архитекторов и дизайнеров
-                                Окончание регистрации: 10 августа 
-                                Прием работ: 10 августа 
-                                Россия
+                            Окончание регистрации: 10 августа
+                            Прием работ: 10 августа
+                            Россия
                         </h3>
                     </div>
                 </div>
@@ -491,9 +489,9 @@
                     <div class="contest_item-description">
                         <h2 class="description_title size-3">Тайбэйский международный конкурс дизайна 2018</h2>
                         <h3 class="description_category size-4">Taipei International Design Award
-                                Окончание регистрации: 25 июля 
-                                Прием работ: 25 июля 
-                                Тайвань, Тайбэй
+                            Окончание регистрации: 25 июля
+                            Прием работ: 25 июля
+                            Тайвань, Тайбэй
                         </h3>
                     </div>
                 </div>
@@ -503,29 +501,29 @@
                         <a href="#" class="contest_item_link">
                             <img src="./images/contest_item-4.png" alt="" class="item_image">
                         </a>
-                        
+
                     </div>
                 </div>
 
-            </div> 
+            </div>
         </div>
     </section>
 
     <section class="partners">
         <div class="partners_container">
-            
-            
-                <div class="partners_slider-navigation container">
-                    <h2 class="partners_title size-2">Партнеры</h2>
-                    <a href="#" class="partners_all size-4">Все</a> 
-                    <div class="navigation_arrow">
-                        <button class="arrow_left partners_arrow_left arrow button">    
-                        </button>
-                        <button class="arrow_right partners_arrow_right arrow button">
-                        </button>
-                    </div>
+
+
+            <div class="partners_slider-navigation container">
+                <h2 class="partners_title size-2">Партнеры</h2>
+                <a href="#" class="partners_all size-4">Все</a>
+                <div class="navigation_arrow">
+                    <button class="arrow_left partners_arrow_left arrow button">
+                    </button>
+                    <button class="arrow_right partners_arrow_right arrow button">
+                    </button>
                 </div>
-            
+            </div>
+
 
             <div class="partners_slider">
                 <div class="partners_slider_item">
@@ -546,7 +544,7 @@
                 <div class="partners_slider_item">
                     <img src="./images/partners-item-6.png" alt="">
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -772,20 +770,20 @@
         </div>
     </footer>
 
-    
+
     <!-- Подключаем JQuery -->
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
 
     <!-- Подключаем библиотеку Slick -->
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
+    <script src='./library/slick-1.8.1/slick/slick.min.js'></script>
+
     <!-- Подключаем основные скрипты -->
     <script src='./main.js'></script>
-    
+
     <!-- Подключаем скрипты для меню-бургера -->
     <script src='./menu.js'></script>
-    
-   
+
+
 </body>
 
 </html>
