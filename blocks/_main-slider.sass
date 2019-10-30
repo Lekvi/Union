@@ -1,26 +1,33 @@
 .slider
     position: relative
-    padding-top: 30px
+    padding-top: 30px  
     &_main
         position: relative
-        img
-            width: 100%
-            // max-width: 1440px
-            max-height: 430px
-            position: relative
-            mix-blend-mode: normal
-        img:before
-            content: "";
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            background: linear-gradient(180deg, rgba(25, 52, 65, 0.0001) 0%, rgba(25, 52, 65, 0.5) 100%);
     &_item
-        background-image: url ('./image/main_slider-item.png')
+        min-height: 450px !important
+        background: url('./images/main_slider-item.png'), linear-gradient(180deg, rgba(25, 52, 65, 0.0001) 0%, rgba(25, 52, 65, 0.5) 100%)
         background-size: cover
+        position: relative
+        &-container
+            @extend .container
+            display: flex
+            flex-direction: column
+    &_description
+        display: inline-block
+        // margin: 130px 0 0 140px
+        margin-top: 130px
+        color: #FFFFFF
+        font-size: 36px
+        max-width: 540px
+    &_category
+        display: inline-block
+        align-self: flex-start
+        // margin-left: 140px
+        transform: translateY(-20px)
+        display: inline-block
+        padding: 10px
+        background-color: $text-hover-red  
+        color: #fff
     &_navigation
         position: absolute
         bottom: 50px
@@ -28,6 +35,11 @@
         display: flex
         justify-content: space-between
         align-items: center
+        .arrow
+            &:hover::before
+                color: $text-hover
+            &::before
+                color: #fff
         &_dots
             ul
                 display: flex

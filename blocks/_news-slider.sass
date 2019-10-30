@@ -1,0 +1,59 @@
+.news
+    .news_container
+        padding-bottom: 200px
+    .container
+        position: relative
+        .news_banner
+            position: absolute
+            bottom: -300px
+    &_container
+        @extend .container
+        max-width: 1260px
+    .navigation_arrow
+            flex-basis: 90%
+            justify-content: flex-end
+            display: flex    
+            .arrow
+                padding: 0 8px
+    .news_slider
+        &-navigation
+            display: flex
+            justify-content: space-between
+            padding: 60px 0 35px
+            align-items: center
+            .news_all
+                text-decoration: none
+                color: $text-hover
+                font-size: 14px
+                margin-left: 25px
+            .news_all:hover
+                color: $text-hover-red
+        &-item
+            max-width: 320px 
+            .news_item
+                &-description
+                    max-width: 280px
+                    padding: 10px
+                    text-align: justify
+                    h2
+                        font-size: 18px
+                        margin-bottom: 14px
+                        &:hover
+                            color: $text-hover-red
+                            cursor: pointer
+                            text-decoration: underline
+                    h3
+                        font-style: italic
+                        font-size: 14px
+                        color: #799A8E
+        .news_item-img
+            position: relative
+            .item_date
+                position: absolute
+                top: -20px
+                left: 20px
+@media ( max-width: 770px)  
+    .news
+        .news_container
+            padding-bottom: 50px                        
+

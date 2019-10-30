@@ -1,0 +1,15 @@
+.grey_bg
+    background-color: $grey-bg
+    min-height: 340px
+    position: relative
+    .container
+        @extend .news_container
+        .news_banner
+            position: absolute
+            transform: translateY(-50%)
+        img
+            max-width: 80vw
+@media ( max-width: 770px)  
+    .grey_bg
+        min-height: 240px
+            

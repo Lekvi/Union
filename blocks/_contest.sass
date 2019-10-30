@@ -1,0 +1,51 @@
+.contest
+    max-height: 424px
+    &_slider
+        display: flex
+        justify-content: space-between
+        overflow: hidden
+    &_container
+        transform: translateY(-180px)
+        @extend .news_container
+        .container
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            padding: 35px 0
+            .contest_all
+                margin-left: 25px
+                text-decoration: none
+                color: $text-hover
+            .contest_all:hover
+                color: $text-hover-red    
+    &_item
+        @extend .news_slider-item
+        margin: 0px 10px
+        &:first-child
+            margin-left: 0
+        &:last-child
+            margin-right: 0
+        &-img
+            position: relative
+        &-description
+            max-width: 280px
+            padding: 10px
+            text-align: justify
+    .description_title
+        font-size: 18px
+        margin-bottom: 14px   
+        font-weight: 500
+        text-align: initial
+    .description_category
+        font-weight: 300
+        font-size: 16px     
+        color: $primary
+    &_date
+        position: absolute
+        top: -20px
+        left: 20px
+@media ( max-width: 770px)
+    .contest
+        max-height: 350px
+    
+       

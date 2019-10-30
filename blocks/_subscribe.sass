@@ -1,0 +1,51 @@
+.subscribe
+    height: 150px
+    &_container
+        @extend .partners_container
+        background: url('/images/subscribe-banner_image.png'), $primary
+        background-size: cover
+        mix-blend-mode: normal
+        min-height: 190px
+        transform: translateY(-50%)
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+    &_form
+        display: flex
+        justify-content: center
+        align-items: center
+    &_title
+        margin-right: 200px
+        font-weight: 500
+        font-size: 36px
+        color: #fff
+    &_input
+        display: flex
+    &_place
+        padding: 10px
+        border: none
+    &_button
+        &::before
+            content: '\e5c8'
+            font-family: 'Material Icons'
+            font-size: 24px
+            line-height: 24px
+            display: inline-block
+            background-color: $text-hover
+            color: #fff
+            padding: 9px
+        &:hover::before    
+             background-color: $text-hover-red
+@media ( max-width: 770px  )
+    .subscribe
+        &_form
+            flex-direction: column
+            align-items: flex-start
+        &_input
+            align-self: flex-start
+        &_title
+            margin-bottom: 24px
+    
+
+
+            

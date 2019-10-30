@@ -1,0 +1,29 @@
+.partners
+    @extend .grey_bg
+    &_container
+        @extend .container
+        max-width: 1260px !important
+    .container
+        max-width: 1200px 
+    &_slider
+        &-navigation
+            display: flex
+            justify-content: space-between
+            padding: 60px 0 35px !important
+            align-items: center
+            .navigation_arrow
+                flex-basis: 90%
+                justify-content: flex-end
+                display: flex    
+                .arrow
+                    padding: 0 8px   
+            .partners_all
+                margin-left: 25px
+                text-decoration: none
+                color: $text-hover
+                &:hover
+                    color: $text-hover-red    
+             
+@media (max-width: 770px)
+    .partners
+        min-height: 340px;

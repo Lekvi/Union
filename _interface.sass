@@ -1,9 +1,9 @@
+@import '_colors.sass'
 *
     padding: 0
     margin: 0
     box-sizing: border-box
-
-    
+   
 .button
     background: none
     border: none
@@ -11,3 +11,25 @@
     cursor: pointer
     &:focus
          outline: none
+.arrow
+    &:hover::before
+        color: $text-hover-red
+    &::before
+        font-family: 'Material Icons'
+        font-size: 24px
+        line-height: 24px
+        display: inline-block
+        color: $text-hover  
+    &_right::before
+        content: '\e5c8'
+    &_left::before
+        content: '\e5c4' 
+.slick-disabled:before
+    opacity: 0.2         
+.category
+    display: inline-block
+    padding: 10px
+    background-color: $text-hover-red  
+    color: #fff
+
+    
