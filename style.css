@@ -609,7 +609,7 @@
 }
 
 .subscribe_container {
-  background: url("/images/subscribe-banner_image.png"), #193441;
+  background: url("./images/subscribe-banner_image.png"), #193441;
   background-size: cover;
   mix-blend-mode: normal;
   min-height: 190px;
