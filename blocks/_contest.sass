@@ -3,10 +3,13 @@
     &_slider
         display: flex
         justify-content: space-between
-        overflow: hidden
+    &_slider-mobile
+        display: none
     &_container
         transform: translateY(-180px)
         @extend .news_container
+        .navigation_arrow
+            display: none
         .container
             display: flex
             justify-content: flex-start
@@ -47,5 +50,12 @@
 @media ( max-width: 770px)
     .contest
         max-height: 350px
-    
-       
+@media ( max-width: 770px  )
+    .contest
+        &_slider    
+            @extend .contest_slider-mobile   
+    .navigation_arrow 
+        display: block
+
+   
+   
