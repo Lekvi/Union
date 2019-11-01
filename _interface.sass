@@ -5,11 +5,15 @@
     box-sizing: border-box
 
 // Настройка для отображения скрытых элементов карусели Slick
+html
+    overflow-x: hidden 
 body 
-  overflow-x: hidden
+    overflow-x: hidden
 
-.partners .partners_container .slick-list, .news .news_container .slick-list, .slider .slider_main .slick-list 
-  overflow: visible
+.partners .partners_container .slick-list, .news .news_container .slick-list, .slider .slider_main .slick-list, .contest .contest_slider .slick-list
+    overflow: visible
+.slick-list
+    overflow: visible
 
 .button
     background: none

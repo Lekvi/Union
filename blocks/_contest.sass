@@ -1,12 +1,14 @@
+@import '_news-slider.sass'
 .contest
     max-height: 424px
     &_slider
         display: flex
         justify-content: space-between
-    &_slider-mobile
-        display: none
+        &-navigation
+            @extend .news_slider-navigation
     &_container
         transform: translateY(-180px)
+        margin: auto
         @extend .news_container
         .navigation_arrow
             display: none
@@ -47,15 +49,22 @@
         position: absolute
         top: -20px
         left: 20px
+@media (max-width: 1360px)
+    .contest
+        &_container
+            padding: 0px 60px
 @media ( max-width: 770px)
     .contest
-        max-height: 350px
-@media ( max-width: 770px  )
-    .contest
-        &_slider    
-            @extend .contest_slider-mobile   
-    .navigation_arrow 
-        display: block
-
+        &_slider
+            
+        &_container
+            .container    
+                justify-content: space-between 
+            .navigation_arrow
+                flex-basis: 90%
+                justify-content: flex-end
+                display: flex    
+                .arrow
+                    padding: 0 8px
    
    
